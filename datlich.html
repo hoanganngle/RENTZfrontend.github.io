@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/Main.css" rel="stylesheet">
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script>
+        function myFunction() {
+            if (confirm('Bạn đã login và chắc chắn về thông tin và lịch hẹn chưa?')) {
+                alert('Lịch hẹn đã được đặt thành công!');
+            } else {
+                alert('Xin vui lòng đăng nhập và kiểm tra lại thông tin!');
+            }
+        }
+    </script>
+/head>
+
+<body class="fontfamily">
+	<nav class="navbar navbar-expand-lg bg-white  mx-auto ">
+  		<div class="container-fluid mx-auto" style="width: 90%">
+			<a class="navbar-brand" style="font-weight: bold; font-size: 30px; margin-top: 5px;"><img src="images/rentz.png" style="height:40px; width:40px; display:inline-block; margin-right:5px; margin-bottom:5px; border-radius: 40%;" />RENTZ</a>
+    		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      		<span class="navbar-toggler-icon"></span>
+    		</button>
+    		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      			<div class="navbar-nav ms-auto" >
+        			<a class="nav-link" aria-current="page" href="index.html">Trang chủ</a>
+        			<a class="nav-link" href="Phongtro.html">Phòng trọ</a>
+        			<a class="nav-link active" href="datlich.html">Đặt lịch</a>
+        			<a class="nav-link" href="dangnhap.html">Tài khoản</a>
+      			</div>
+    		</div>
+ 	 	</div>
+	</nav>
+	<div class="container-fluid p-3" style="background: #F9F9F9">
+		<div class="container mx-auto row p-5" style="width: 100%">
+			<div class="col-md-6 col-sm-12">
+				<img src="images/datlich.png" style="width: 90%">
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="tieude" align="left">Đặt lịch hẹn<br> Để chọn phòng ưng ý</div>
+				<div class="mota mt-2" style="color:#2D3958; font-weight: bold;" align="left">Tên phòng trọ</div>
+				<select class="container mota p-2 boderandshadow mt-2" style="background: #FFFFFF" name="Tên phòng trọ" id="Room">
+					<option value="Thienan">Nhà trọ Thiên An</option>
+					<option value="Sutu">Nhà Trọ Mini Thủ Đức 4</option>
+					<option value="mercedes">Căn hộ VinD</option>
+					<option value="audi">Nhà trọ Toại</option>
+				</select>
+
+				
+				<div class="row">
+					<div class="col-5 mx-auto mt-2" align="center">
+						<div class="mota mb-2" style="font-weight: bold; color: #2D3958" align="left">Ngày hẹn</div>
+						<input class=" mx-auto container boderandshadow mota  p-2" style="border:0" type="date">
+					</div>
+					<div class="col-5 mx-auto mt-2" align="center">
+						<div class="mota mb-2" style="font-weight: bold; color: #2D3958" align="left">Thời gian</div>
+						
+						<form class=" mx-auto mota container boderandshadow p-2" style="border: 0" action="/action_page.php">
+							
+							<input type="time" id="appt" name="appt">
+						</form>
+					</div>
+				</div>
+				<div class="container mx-auto">
+					<div class="mt-2 mota" style="font-weight: bold; color: #2D3958;">Lời nhắn</div>
+					<input class="mota mt-2 p-2 boderandshadow mx-auto" style="border:0; width: 100%;" type="text">
+				</div>
+				<div class="container mx-auto mt-4" style="width: 100%" align="center">
+					<button class="button-18 mx-auto  p-3 mota" style="width: 100%; color: #FFFFFF" onclick="myFunction()">Tạo lịch hẹn</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!end base>
+	<div class="container-fluid mx-auto p-3 row" style="background-color: #2279FF; color: #E7E5EA">
+		<div class="col-2 mx-auto">
+			<span class="flaticon-desk display-3 mb-3 d-block text-primary" style="margin-top: 16px;"><img src="images/rentz.png" style="height:240px; width:240px" /></span>
+		</div>
+		<div class="col-6 mx-auto">
+			<div>
+				<span class="text-light h2 d-inline-block"></span>
+				<h2>RENTZ</h2>
+				<p class="mb-0">Rentz là một công ty trách nhiệm hữu hạng ra đời vào năm 2023, dự án phát triển cùng tên là dự án phát triển một web, app hỗ thuê phòng trọ dễ dàng uy tín và an toàn dành cho mọi người.</p>
+				<br />
+				<p class="mb-0">Công ty TNHH Gác Nhỏ Địa chỉ: Lô E2a-7, Đường D1, Đ. D1, Long Thạnh Mỹ, Thành Phố Thủ Đức, Thành phố Hồ Chí Minh 700000, Việt Nam Gmail: hcmuni.fpt.edu.vn Liên lạc: +84 28 7300 5588</p>
+				<br />
+				<p class="mb-0">&copy; Copyright 2023 RENTZ VIETNAM. Powered by RENTZ.</p>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</body>
+</html>
